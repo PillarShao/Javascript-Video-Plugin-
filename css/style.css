@@ -1,0 +1,133 @@
+.video_box{
+    max-width: 600px;
+    margin: 100px auto;
+}
+.video_box.full{
+    position:fixed;
+    top:0;
+    left:0;
+    max-width:100%;
+    margin:0;
+}
+
+.video_box video{
+    display: block;
+}
+.video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.video_lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.lay_top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: rgba(0, 0, 0, 0.3 );
+}
+.btn_box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.play_btn,.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    font-size: 36px;
+    cursor: pointer;
+}
+.loading{
+    display: none;
+}
+.lay_controls{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 40px;
+}
+.palyOrpause{
+    color: #ffffff;
+    display: table;
+    float: left;
+    padding: 8px;
+    cursor: pointer;
+}
+.expand_box{
+    display: table;
+    float: right;
+    color: #ffffff
+}
+.time_line{
+    margin: 18px 0;
+    display: table;   
+    width: 100%;
+    height: 3px;    
+    height: 3px;
+    background-color: rgba(255,255,255,0.6 );
+    position: relative;
+}
+.line_box{
+    margin: 0;
+    display: table;
+    float: left;
+    width: calc(100% - 100px);
+    position: relative;
+}
+.line_over{
+    position: absolute;
+    top: 0;
+    width: 0;
+    left: 0;
+    height: 3px;
+    background-color:salmon;
+}
+.move_btn{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -4px;
+    background-color:salmon;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.voice,.auto{
+    display: table;
+    float: left;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+}
+.voice_box span{
+    height: 2px;
+    width: 10px;
+    border-bottom:3px solid #ffffff;
+    display: table;
+    padding: 2px 0;
+}
+.voice_box span.on{
+    border-bottom:3px solid aqua;
+}
+.voice_box span:last-child{
+    margin-bottom: 5px;
+}
+.voice_box{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 7px;
+    position: absolute;
+    top: -66px;
+    left: 3px;
+    display: none;
+}
